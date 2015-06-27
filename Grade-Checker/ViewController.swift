@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Input: UITextField!
+    @IBOutlet weak var Output: UILabel!
+    @IBAction func Changer(sender: AnyObject) {
+        self.Output.text = self.Input.text
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
